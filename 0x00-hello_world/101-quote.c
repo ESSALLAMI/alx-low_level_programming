@@ -1,11 +1,12 @@
 #include<stdio.h>
 #include<unistd.h>
-/**
-* main-Entry point
-* Return:Always1 (Success)
+/*main - prints "and that piece of art is useful" - Dora Korpar, 2015-10-19",
+* folloxed by newline, to standard error.
+*Return: Always 1.
 */
 int main(void)
 {
-write(2, "with proper grammar, but the outcome is a piece of art, \n");
+write(2, "and that piece of art is useful\" -Dora Korpar, 2015-10-19\n", 59);
 return (1);
- }
+}
+
