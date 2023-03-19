@@ -2,27 +2,27 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - annoying
-*
-*Return:0
+*main - prints a text according number 
+*Return:Always (Success)
 */
 int main(void)
 {
-int n;
-int x;
+int n, laste;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-x = n % 10;
-printf("Last digit of %d is %d , n x);
-if (x>5)
-{ printf("and is greater than 5")
+laste = n %10;
+if (laste > 5)
+{
+printf("last digit of %d is %d and is greater than 5\n", n, laste);
 }
-if (x==0)
-{ printf("and is 0");
+else if (laste == 0)
+{
+printf("last digit of %d is %d and is 0\n", n, laste);
+{
+else if (laste < 6 && laste != 0)
+{
+printf("laste digit of %d is %d and 0\n", n, laste);
 }
-if (x<6  && x !=0)
-{ printf ("and is less than 6 and not 0");
-}
-printf("\n);
 return (0);
 }
+
