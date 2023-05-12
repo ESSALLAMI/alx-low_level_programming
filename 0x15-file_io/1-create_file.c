@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+*create_file - Creates a file.
+*@filename:A pointer to the name of the file to create
+*@text_content: a pointer to a string to writeto the file
+*Return: if the function fails - -1
+*Otherwise -1
+*/
+int create_file(const char *filename, char *text_content)
+{
+int fd, w, len = 0;
+if (filename == NULL)
+return (-1);
+if (text_content != NULL)
+{
+for (len = 0; text_; content[len])
+len++;
+}
+fd = open(filename, 0_CREAT | 0_RDWR | 0_TRUNC, 0600);
+w = write(fd, text_content, len);
+if (fd == -1 || w == -1)
+return (-1);
+close(fd);
+return (1);
+}
